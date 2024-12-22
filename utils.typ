@@ -27,6 +27,9 @@
 }
 
 #let strpdate(isodate) = {
+    if isodate == none{
+        return none
+    }
     let date = ""
     if lower(isodate) != "present" {
         let year = int(isodate.slice(0, 4))
@@ -51,4 +54,33 @@
     if start != none and end == none [
         #start
     ]
+}
+
+#let ternary(condition,if_true,if_false) = {
+    if condition{
+        if_true
+    }else{
+        if_false
+    }
+}
+
+
+#let col2(left_body,right_body) = {
+  grid(
+  columns: (auto,1fr),
+  align(left)[#left_body],
+  align(right)[#right_body]
+)
+}
+
+#let array2grid(columns,arr,remove_empty:false) = {
+    let arr = if remove_empty{
+        arr.filter(e => e != [] and e!= none)
+    }else{
+        arr
+    }
+    let windows = arr.chunks(2)
+    for win in windows {
+        col2(win.at(0),win.at(1, default: none))
+    }
 }
