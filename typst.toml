@@ -1,19 +1,18 @@
 [package]
-name = "imprecv"
-version = "1.0.0"
+name = "yamlcv"
+version = "1.0.1"
 compiler = "0.11.0"
-entrypoint = "cv.typ"
-authors = ["Je Sian Keith Herman <https://jskherman.com>"]
+entrypoint = "lib/cv.typ"
+authors = ["Omar Mohamed Samir <https://github.com/omarsamir27>","Je Sian Keith Herman <https://jskherman.com>"]
 license = "Apache-2.0"
 description = "A no-frills curriculum vitae (CV) template using Typst and YAML to version control CV data."
 keywords = ["CV", "Curriculum Vitae", "Resume", "Minimalistic", "Professional", "YAML", "Data"]
 categories = ["cv"]
 disciplines = []
-homepage = "https://github.com/jskherman/imprecv"
-repository = "https://github.com/jskherman/imprecv"
+homepage = "https://github.com/omarsamir27/yamlcv"
+repository = "https://github.com/omarsamir27/yamlcv"
 
 
 [template]
 path = "template"
-entrypoint = "template.typ"
-thumbnail = "assets/thumbnail.1.png"
+entrypoint = "main.typ"

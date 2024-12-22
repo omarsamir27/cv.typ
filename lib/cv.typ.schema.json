@@ -15,8 +15,7 @@
       "type": "object",
       "default": {},
       "required": [
-        "name",
-        "profiles"
+        "name"
       ],
       "properties": {
         "name": {
@@ -47,11 +46,11 @@
           "default": ""
         },
         "titles": {
-            "type": "array",
-            "default": [],
-            "items": {
-              "type": "string"
-            }
+          "type": "array",
+          "default": [],
+          "items": {
+            "type": "string"
+          }
         },
         "location": {
           "type": [
@@ -109,6 +108,9 @@
         }
       }
     },
+    "objective": {
+      "type": "string"
+    },
     "work": {
       "type": "array",
       "default": [],
@@ -148,11 +150,17 @@
                   "type": "string"
                 },
                 "startDate": {
-                  "type": ["string", "null"],
+                  "type": [
+                    "string",
+                    "null"
+                  ],
                   "format": "date"
                 },
                 "endDate": {
-                  "type": ["string", "null"]
+                  "type": [
+                    "string",
+                    "null"
+                  ]
                 },
                 "highlights": {
                   "type": [
@@ -161,17 +169,21 @@
                   ],
                   "items": {
                     "type": "object",
-                    "properties":{
-                      "text": {
-                        "type" : "string"
-                      },
-                      "url":{
-                        "type" : ["string","null"]
-                      }
-                    },
                     "required": [
-          "text"
-        ]
+                      "text"
+                    ],
+                    "properties": {
+                      "text": {
+                        "type": "string"
+                      },
+                      "url": {
+                        "type": [
+                          "string",
+                          "null"
+                        ],
+                        "format": "uri"
+                      }
+                    }
                   }
                 }
               }
@@ -233,11 +245,17 @@
             }
           },
           "startDate": {
-            "type": ["string", "null"],
+            "type": [
+              "string",
+              "null"
+            ],
             "format": "date"
           },
           "endDate": {
-            "type": ["string", "null"]
+            "type": [
+              "string",
+              "null"
+            ]
           },
           "highlights": {
             "type": [
@@ -285,11 +303,17 @@
             "type": "string"
           },
           "startDate": {
-            "type": ["string", "null"],
+            "type": [
+              "string",
+              "null"
+            ],
             "format": "date"
           },
           "endDate": {
-            "type": ["string", "null"]
+            "type": [
+              "string",
+              "null"
+            ]
           },
           "highlights": {
             "type": [
@@ -437,12 +461,7 @@
         "type": "object",
         "default": {},
         "required": [
-          "name",
-          "url",
-          "affiliation",
-          "startDate",
-          "endDate",
-          "highlights"
+          "name"
         ],
         "properties": {
           "name": {
@@ -462,12 +481,18 @@
             "default": ""
           },
           "startDate": {
-            "type": ["string", "null"],
+            "type": [
+              "string",
+              "null"
+            ],
             "format": "date",
             "default": ""
           },
           "endDate": {
-            "type": ["string", "null"],
+            "type": [
+              "string",
+              "null"
+            ],
             "default": ""
           },
           "highlights": {
@@ -503,7 +528,10 @@
       }
     },
     "languages": {
-      "type": "array",
+      "type": [
+        "array",
+        "null"
+      ],
       "default": [],
       "items": {
         "type": "object",
@@ -522,7 +550,10 @@
       }
     },
     "interests": {
-      "type": "array",
+      "type": [
+        "array",
+        "null"
+      ],
       "default": [],
       "items": {
         "type": "string"

@@ -1,0 +1,108 @@
+# yaml-language-server: $schema=../lib/cv.typ.schema.json
+
+personal:
+  name: John Doe
+  email: johnDoe@gmail.com
+  phone: +20 10 0000000
+  url:
+  titles:
+    - Software Engineer
+  location:
+    city: Alexandria
+    region: ""
+    country: Egypt
+  profiles:
+    - network: GitHub
+      username: doejohn
+      url: https://github.com/doejohn
+    - network: LinkedIn
+      username: doe
+      url: https://linkedin.com/in/doe
+objective: Software engineer with a solid foundation in both software and hardware, eager to pursue global opportunities. Special focus on backend development and systems engineering, with a commitment to mastering computer engineering. Dedicated to delivering impactful, innovative solutions through problem-solving and developing scalable, high-quality software.
+work:
+  - organization: Harvard University
+    url:
+    location: "Egypt"
+    positions:
+      - position: Research Assistant & Teaching Assistant
+        startDate: "2023-12-01"
+        endDate: "2024-12-01"
+        highlights:
+          - text: Instructed courses on *Operating Systems*, *Databases*, and *Algorithms*, providing comprehensive education to students.
+            url: google.com
+  - organization: Bibliotheca Alexandrina ICT Sector
+    url: "https://www.bibalex.org"
+    location: Alexandria, Egypt
+    positions:
+      - position: Software Engineering Intern
+        startDate: 2022-07-01
+        endDate: 2022-09-01
+        highlights:
+          - text: Simulated a setup of a *distributed ﬁle system* (GlusterFS) on 4 diﬀerent virtual machines using VMware.
+            url: "https://www.gluster.org"
+education:
+  - institution: School of Engineering, Stanford University
+    url:
+    area: Computer Engineering
+    studyType: BSc.
+    score: 3.33 / 4.0 GPA
+    startDate: 2018-10-01
+    endDate: 2023-06-30
+    location: Alexandria, Egypt
+    honors:
+    courses:
+    highlights:
+      - "*Thesis*: Best Database Ever"
+
+affiliations:
+awards:
+certificates:
+publications:
+
+projects:
+  - name: "Bachelor's Degree Graduation Project: Design and Implementation of the best Database Ever"
+    url: "https://google.com"
+    # affiliation: Faculty of Engineering, Alexandria University
+    startDate: "2022-10-01"
+    endDate: "2023-06-30"
+    highlights:
+      - Designed and implemented *SQL parser*, logical and physical *query planning* that supports multiple inner joins, sorting, ﬁltering and grouping.
+      - Designed and implemented a *storage engine* with an eﬃcient buﬀer utilization algorithm, *Hash and B+ Tree indexes* and variable length records.
+      - Implemented support for multiple separate databases, ﬂexible schema with several datatypes and relational constraints using catalogs.
+      - Designed and implemented simple desktop GUI client using *FLTK* to demo the database system.
+      - Wrote *unit tests* for database components and integration tests for several usage scenarios.
+  - name: "Multithreaded Webserver in Rust"
+    url: "https://google.com"
+    highlights:
+      - Contributed in a multi-threaded web server using *(Rust)* and client *(Python)* simulation.
+  - name: "Car Rental Web Application"
+    url: "https://google.com"
+    highlights:
+      - Designed and Implemented Car Rental Web Application using *Flask* framework and *PostgreSQL* as a database server.
+  - name: "Mathematical Expression Interpreter"
+    url: "https://google.com"
+skills:
+  - category: Programming Languages
+    skills:
+      - Python
+      - Rust
+      - C/C++
+      - JS/TS
+      - MATLAB
+  - category: DevOps
+    skills:
+      - Docker
+  - category: Web Development
+    skills:
+      - Rocket
+      - Flask
+      - Svelte
+  - category: Misc.
+    skills:
+      - PostgreSQL
+      - Linux & Unix-Like Systems
+      - VMware & VBox
+      - Git
+languages:
+interests:
+references:
